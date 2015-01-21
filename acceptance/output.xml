@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.7.0_71)" generated="20150108 10:55:38.856">
+<suite source="C:\Users\Eric\Documents\Personal Projects\Text-Adventure\acceptance\TextAdventureAcceptance.txt" id="s1" name="TextAdventureAcceptance">
+<test id="s1-t1" name="Start Test for New Game">
+<kw type="kw" name="TextAdventureKeywords.Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150108 10:55:39.506" starttime="20150108 10:55:39.493"></status>
+</kw>
+<kw type="kw" name="TextAdventureKeywords.Append Game Room">
+<doc></doc>
+<arguments>
+<arg>Hallway</arg>
+</arguments>
+<status status="PASS" endtime="20150108 10:55:39.520" starttime="20150108 10:55:39.511"></status>
+</kw>
+<kw type="kw" name="TextAdventureKeywords.Append Game Room">
+<doc></doc>
+<arguments>
+<arg>Kitchen</arg>
+</arguments>
+<status status="PASS" endtime="20150108 10:55:39.529" starttime="20150108 10:55:39.524"></status>
+</kw>
+<kw type="kw" name="TextAdventureKeywords.Append Game Room">
+<doc></doc>
+<arguments>
+<arg>Basement</arg>
+</arguments>
+<status status="PASS" endtime="20150108 10:55:39.536" starttime="20150108 10:55:39.533"></status>
+</kw>
+<kw type="kw" name="${Hallway} = TextAdventureKeywords.Get Room">
+<doc></doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20150108 10:55:39.544" level="INFO">${Hallway} = Hallway</msg>
+<status status="PASS" endtime="20150108 10:55:39.542" starttime="20150108 10:55:39.539"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>Hallway</arg>
+<arg>${Hallway}</arg>
+</arguments>
+<msg timestamp="20150108 10:55:39.554" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20150108 10:55:39.556" starttime="20150108 10:55:39.547"></status>
+</kw>
+<kw type="kw" name="${Kitchen} = TextAdventureKeywords.Get Room">
+<doc></doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20150108 10:55:39.567" level="INFO">${Kitchen} = Kitchen</msg>
+<status status="PASS" endtime="20150108 10:55:39.565" starttime="20150108 10:55:39.560"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>Kitchen</arg>
+<arg>${Kitchen}</arg>
+</arguments>
+<msg timestamp="20150108 10:55:39.581" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20150108 10:55:39.584" starttime="20150108 10:55:39.571"></status>
+</kw>
+<kw type="kw" name="${Basement} = TextAdventureKeywords.Get Room">
+<doc></doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20150108 10:55:39.593" level="INFO">${Basement} = Basement</msg>
+<status status="PASS" endtime="20150108 10:55:39.592" starttime="20150108 10:55:39.587"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>Basement</arg>
+<arg>${Basement}</arg>
+</arguments>
+<msg timestamp="20150108 10:55:39.607" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20150108 10:55:39.610" starttime="20150108 10:55:39.600"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" critical="yes" endtime="20150108 10:55:39.614" starttime="20150108 10:55:39.482"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150108 10:55:39.625" starttime="20150108 10:55:38.864"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" id="s1" fail="0" name="TextAdventureAcceptance">TextAdventureAcceptance</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
